@@ -37,6 +37,7 @@ iPhoneのバイブレーションを使って、何か点字を表現できな�
 <div>
 <code>
 // ViewController.swift の内容
+
 import UIKit
 
 import AudioToolbox // バイブレートするAudioServicesPlaySystemSound()を使うために追加
@@ -44,16 +45,24 @@ import AudioToolbox // バイブレートするAudioServicesPlaySystemSound()を
 class ViewController: UIViewController {
 
 // 「ブーブーー」と2回振動する関数    
+
 @IBAction func twoVibe(){
+
         AudioServicesPlaySystemSound(1011)
+
         sleep(1) // 少し間を置く
+
     }
     
 // 「ブー」と1回振動する関数
+
 @IBAction func oneVibe(){
-        AudioServicesPlaySystemSound(4095)
-        sleep(1) // 少し間を置く
-    }
+        
+AudioServicesPlaySystemSound(4095)
+        
+sleep(1) // 少し間を置く
+    
+}
 
 // 以下略
 
@@ -65,9 +74,3 @@ class ViewController: UIViewController {
 ## 著作権
 
 自己責任で自由にどうぞご利用ください。
-
-
-
-
-
-
